@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grenze:wght@500&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    </style>
+</head>
+<body>
+    <div class="overall-container">
+        <div>
+            <div class="menu-container">
+                <span>Block Bot</span>
+            </div>
+            <div class="main-content-container">
+                <div class="introduction-details show-animaton">
+                    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXXygHZ_a0acENA_y4yo_rwl-wN9YxxHmXSg&s" alt="Polkadot">
+                    <div class="intro">
+                        <div>Block Bot allows Polkadot users to send cryptocurrency to friends and family directly via WhatsApp.</div>
+                    </div>
+                </div>
+                <div class="coming-soon">
+                    <span>Coming Soon!</span>
+                    <p>Please stay tuned for more update.</p>
+                </div>
+                <div class="transaction-container show-animaton">
+                    <div class="form-container">
+                        <div class="head">
+                            <div>Send Crypto From <img src="/whatsapp-logo.svg" alt="WhatsApp"></div>
+                        </div>
+                        <form>
+                            <label for="userName" class="label">What should we call you? ☺</label>
+                            <input type="text" name="userName" placeholder="coindude" maxlength="20" minlength="3" id="userName">
+                            <label for="amount" class="label"><img src="https://static.coingecko.com/s/polkadot-73b0c058cae10a2f076a82dcade5cbe38601fad05d5e6211188f09eb96fa4617.gif" alt=""> Token</label>
+                            <select name="Polkadot">
+                                <option value="MINA">Polkadot</option>
+                            </select>
+                            <label for="userNumber" class="label">Your WhatsApp Number</label>
+                            <input type="number" name="userNumber" id="phone">
+                            <button type="button" id="sendCrypto">Connect To WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="steps show-animaton">
+                <div>
+                    <h1>How It Works?</h1>
+                </div>
+                <ul>
+                    <li>You enter your WhatsApp registered phone number, and we will send you a welcome message.</li>
+                    <li>Next, provide the address you want to send crypto to and the amount you wish to transfer.</li>
+                    <li>Leave the rest for smart contracts. The information you provided will be sent to the smart contract to process the transaction.</li>
+                    <li>Approve the transaction from your account</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          // Options for the plugin
+          separateDialCode: true,
+          initialCountry: "US", // Set a default country
+          utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // for formatting/validation etc
+        });
+    </script>
+</body>
+</html>
