@@ -75,7 +75,7 @@ html, body {
     margin: 3rem 1rem;
     border-radius: 20px;
     padding: 20px 3rem;
-    color: #cf81ff;
+    color: white;
     background: #000000;
     height: 300px;
 }
@@ -131,7 +131,7 @@ html, body {
             }
             input {
                 background: #252525;
-                padding: 10px;
+                padding: 10px 25px;
                 border: none;
                 outline: none;
                 color: #ffffff;
