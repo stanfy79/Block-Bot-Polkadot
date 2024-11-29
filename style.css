@@ -208,7 +208,7 @@ html, body {
     background-position: center;
     background-size: cover;
     background-image: url("/uuuuuhupu.jpeg"); */
-    font-family: 'Dela Gothic One', system-ui;
+    font-family: 'Dela Gothic One', serif;
     div {
         font-weight: 700;
         display: flex;
@@ -225,7 +225,7 @@ html, body {
     li {
         color: #ffffff;
         font-size: 17px;
-        font-family: 'Grenze', serif;
+        font-family: "Inter", sans-serif;
         margin: 20px 0;
         max-width: 500px;
         list-style-type: square;
@@ -290,5 +290,5 @@ html, body {
     position: relative;
     left: 0;
     filter: blur(0px);
-    transition: all .8s linear;
+    transition: all .5 .8s linear;
 }
