@@ -63,7 +63,7 @@ html, body {
     }
 }
 .intro {
-    font-size: 16px;
+    font-size: 26px;
     font-family: 'Dela Gothic One', serif;
     line-height: 30px;
     width: 40%;
@@ -76,7 +76,7 @@ html, body {
     border-radius: 20px;
     padding: 20px 3rem;
     color: white;
-    background: #000000;
+    background: transparent;
     height: 300px;
 }
 .transaction-container {
@@ -203,7 +203,7 @@ html, body {
     margin: 5rem 0;
     border-radius: 30px;
     position: absolute;
-    background: #121212;
+    background: transparent;
     /* background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -224,7 +224,7 @@ html, body {
     }
     li {
         color: #ffffff;
-        font-size: 17px;
+        font-size: 18px;
         font-family: "Inter", sans-serif;
         margin: 20px 0;
         max-width: 500px;
@@ -243,7 +243,7 @@ html, body {
     padding: 2rem;
     border-radius: 15px;
     background: #090909;
-    border: 2px solid orange;
+    border: 2px solid #9d00ff;
     place-self: center;
     text-align: center;
     animation: spring 1.5s;
@@ -251,7 +251,7 @@ html, body {
     animation-iteration-count: initial;
     animation-play-state: running;
     span {
-        color: orange;
+        color: #9d00ff;
         font-size: 30px;
         font-weight: 700;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
