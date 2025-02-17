@@ -233,7 +233,7 @@ html, body {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             overflow: hidden;
-            animation: shring-animation 3s steps(40,end) 2s forward, blink .5s step-end infinite alternate;
+            animation: shring-animation 3s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
         }
         img {
             margin-left: 1rem;
