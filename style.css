@@ -33,6 +33,7 @@ html, body {
         font-weight: 900;
         margin: 0 5px;
         color: #ffffff;
+          animation: glitch-skew 1s infinite linear alternate-reverse;
     }
 }
 .main-content-container {
@@ -345,7 +346,11 @@ html, body {
 .glitch {
   position: relative;
   color: #fff;
-  font-size: 4em;
+font-family: "Audiowide", sans-serif;
+        font-size: 41px;
+        font-weight: 900;
+        margin: 0 5px;
+        color: #ffffff;
   animation: glitch-skew 1s infinite linear alternate-reverse;
 }
 .glitch::before {
