@@ -21,6 +21,9 @@ html, body {
     backdrop-filter: blur(5px);
     padding-left: 15px;
     justify-content: center;
+    img {
+        width: 50px;
+        justify-content: start;
     span {
         font-family: "Audiowide", sans-serif;
         font-size: 41px;
@@ -180,7 +183,7 @@ html, body {
                 height: 40px;
                 transform: scale(1);
                 left: 15px;
-                background: #9d00ff;
+                background: #ff394a;
                 color: #000000;
                 &:active {
                     animation: spring 1s;
@@ -189,7 +192,7 @@ html, body {
                     animation-play-state: running;
                 }
                 &:hover {
-                    background: #660095;
+                    background: #b92d39;
                 }
             }
         }
@@ -235,9 +238,9 @@ html, body {
 
 .coming-soon {
     position: fixed;
-    width: 33vw;
+    width: 40vw;
     min-width: 340px;
-    height: 150px;
+    height: 200px;
     display: none;
     z-index: 2;
     top: 30%;
@@ -260,7 +263,7 @@ html, body {
     p {
         color: #898989;
         margin-top: 20px;
-        font-size: smaller;
+        font-size: 14px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
