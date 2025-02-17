@@ -223,14 +223,13 @@ html, body {
         h1 {
             opacity: 0;
           font-family: "Work Sans", sans-serif;
-          margin: 0 auto auto auto;
           background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
           font-weight: 800;
           width: auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           overflow: hidden;
-          animation: shring-animation 2.2s steps(40,end) 2s infinite alternate, blink .5s step-end infinite alternate;
+          animation: shring-animation 2.2s steps(40,end) 2s infinite forward, blink .5s step-end infinite alternate;
         }
         img {
             margin-left: 1rem;
@@ -268,7 +267,7 @@ html, body {
     animation-iteration-count: initial;
     animation-play-state: running;
     span {
-        color: #9d00ff;
+        color: #ff394a;
         font-size: 30px;
         font-weight: 700;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
