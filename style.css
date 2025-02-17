@@ -12,19 +12,19 @@ html, body {
 .menu-container {
     height: 60px;
     width: 100vw;
-    background: #000000;
     z-index: 2;
     display: flex;
     position: fixed;
     align-items: center;
     top: 0;
+    backdrop-filter: blur(2px);
     padding-left: 15px;
     justify-content: center;
     span {
         font-family: "Audiowide", sans-serif;
         font-size: 41px;
         font-weight: 900;
-        color: #9d00ff;
+        color: #ffffff;
     }
 }
 .main-content-container {
@@ -65,8 +65,8 @@ html, body {
 .intro {
     font-size: 27px;
     font-family: 'Dela Gothic One', serif;
-    line-height: 30px;
-    width: 50%;
+    line-height: 35px;
+    width: 60%;
     min-width: 350px;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ html, body {
     flex-direction: column;
     margin: 3rem 1rem;
     border-radius: 20px;
-    padding: 20px 2rem;
+    padding: 20px 1rem;
     color: white;
     background: transparent;
     height: 300px;
