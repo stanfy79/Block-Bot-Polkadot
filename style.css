@@ -226,13 +226,11 @@ html, body {
           margin: 0 auto auto auto;
           background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
           font-weight: 800;
-          font-size: 100px;  
-          width: 430px;
+          width: auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           overflow: hidden;
-          animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
-}
+          animation: shring-animation 2.2s steps(40,end) 2s infinite alternate, blink .5s step-end infinite alternate;
         }
         img {
             margin-left: 1rem;
