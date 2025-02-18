@@ -227,10 +227,10 @@ html, body {
         h1 {
             font-family: "Work Sans", sans-serif;
             background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
-            width: 25ch;
+            width: auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: typing 5s steps(12) infinite, blink .5s step-end infinite alternate;
+            animation: typing 5s steps(13) infinite, blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 6px solid gray;
