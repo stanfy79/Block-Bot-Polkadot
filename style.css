@@ -222,12 +222,12 @@ html, body {
         font-weight: 700;
         display: flex;
         align-items: center;
-        font-size: 18px;
+        font-size: 22px;
         color: #9d00ff;
         h1 {
             font-family: "Work Sans", sans-serif;
             background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
-            width: 17ch;
+            width: 15ch;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: typing 5s steps(13) infinite, blink .5s step-end infinite alternate;
