@@ -42,6 +42,7 @@ html, body {
     background-size: cover;
     position: relative;
     margin: 3.5rem 0;
+    width: 100%;
     min-height: 100dhv;
     padding: 10px 15px;
     display: flex;
@@ -255,9 +256,9 @@ html, body {
 
 .coming-soon {
     position: fixed;
-    width: 40vw;
+    width: 50vw;
     min-width: 340px;
-    height: 200px;
+    height: 40vh;
     display: none;
     z-index: 2;
     top: 30%;
@@ -273,14 +274,14 @@ html, body {
     animation-play-state: running;
     span {
         color: #ff394a;
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 700;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     p {
         color: #898989;
-        margin-top: 20px;
-        font-size: 14px;
+        margin-top: 20%;
+        font-size: 16px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
