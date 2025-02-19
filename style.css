@@ -42,10 +42,11 @@ html, body {
     background-size: cover;
     position: relative;
     margin: 3.5rem 0;
-    width: 100%;
+    width: 97%;
     min-height: 100dhv;
     padding: 10px 15px;
     display: flex;
+    align-self: center;
     justify-content: center;
     flex-direction: row;
     border-bottom-left-radius: 35px;
@@ -280,7 +281,7 @@ html, body {
     }
     p {
         color: #898989;
-        margin-top: 20%;
+        margin-top: 40px;
         font-size: 16px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
