@@ -165,8 +165,8 @@ html, body {
                 }
             }
             #response {
-              color: rgb(172, 172, 172);
-              font-size: small;
+              color: #acacac;
+              font-size: 10px;
               font-weight: 700;
               margin: 15px 5px
             }
@@ -203,8 +203,8 @@ html, body {
                 height: 40px;
                 transform: scale(1);
                 left: 15px;
-                background: #ff394a;
-                color: #000000;
+                background: #d11d26;
+                color: #ffffff;
                 &:active {
                     animation: spring 1s;
                     animation-timing-function: ease;

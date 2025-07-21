@@ -44,7 +44,7 @@
                         <div class="head">
                             <div>Send Crypto From <img src="whatsapp-logo.svg" alt="WhatsApp"></div>
                         </div>
-                        <form>
+                        <form method="post" >
                             <label for="userNumber" class="label">Your WhatsApp Number</label>
                             <input type="tel" name="userNumber" id="phone" placeholder="Enter your WhatsApp number" required>
                             <div id="response"></div>
@@ -80,8 +80,12 @@
     <script src="script.js"></script>
     <script src="./build/js/intlTelInput.js"></script>
     <script>
-        var input = document.querySelector("#phone");
-        window.intlTelInput(input, {});
+        document.addEventListener("DOMContentLoaded", function() {
+            var input = document.querySelector("#phone");
+            if (window.intlTelInput && input) {
+                window.intlTelInput(input, {});
+            }
+        });
     </script>
 </body>
 </html>

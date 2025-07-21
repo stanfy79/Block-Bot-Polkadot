@@ -49,8 +49,7 @@
     padding: 0;
     margin: 0 0 0 -1px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-    background-color: rgba(31, 31, 31, 0.795);
-    border: 1px solid #CCC;
+    background-color: rgb(43, 43, 43);
     border-radius: 13px;
     white-space: nowrap;
     max-height: 200px;

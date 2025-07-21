@@ -1,4 +1,5 @@
 const feedback = document.getElementById("response");
+const submitbtn = document.querySelector("#sendCrypto");
 
 // === Scroll observer animation ===
 const observer = new IntersectionObserver((entries) => {
@@ -19,10 +20,10 @@ async function sendWhatsAppNumber() {
   const phoneInput = document.getElementById("phone");
   const phone = phoneInput.value.trim();
 
-  if (!phone.match(/^\d{10,15}$/)) {
-    alert("Please enter a valid phone number with country code.");
-    return;
-  }
+  // if (!phone.match(/^\d{10,15}$/)) {
+  //   feedback.text("Please enter a valid phone number with country code.");
+  //   return;
+  // }
 
   try {
     const response = await fetch("https://alpha-apiblbbt.onrender.com/api/send-welcome", {
@@ -32,32 +33,32 @@ async function sendWhatsAppNumber() {
       },
       body: JSON.stringify({ phone })
     });
+    console.log(phone);
 
     const result = await response.json();
     if (response.ok && result.success) {
       feedback.textContent = "WhatsApp message sent successfully!";
+      feedback.style.color = "green";
+      submitbtn.textContent = "Welcome Newbie!";
     } else {
       feedback.textContent = "Failed to send WhatsApp message.";
+      feedback.style.color = "red";
+      submitbtn.textContent = "Connect To WhatsApp";
       console.error(result);
     }
   } catch (error) {
     feedback.textContent = "An error occurred while sending the message.";
+    feedback.style.color = "red";
+    submitbtn.textContent = "Connect To WhatsApp";
     console.error("Error:", error);
   }
 }
 
 
 // === Submit button effects ===
-const submitbtn = document.querySelector("#sendCrypto");
-const popup = document.querySelector(".coming-soon");
 
 submitbtn.addEventListener("click", () => {
-
-  submitbtn.textContent = "Welcome Newbie!";
-  feedback.textContent = "Initiating Sign Up..."
-  popup.style.display = "block";
-  setTimeout( () => {
-      popup.style.display = "none";
-      submitbtn.textContent = "Connect To WhatsApp";
-  }, 4000)
+  feedback.style.color = "#acacac";
+  feedback.textContent = "Initiating Sign Up...";
+  submitbtn.textContent = "Connecting To WhatsApp...";
 });
