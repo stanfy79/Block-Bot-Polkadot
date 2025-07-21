@@ -164,7 +164,7 @@ html, body {
                     font-weight: 400;
                 }
             }
-            div {
+            #response {
               color: rgb(172, 172, 172);
               font-size: small;
               font-weight: 700;
