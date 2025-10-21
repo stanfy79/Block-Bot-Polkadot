@@ -88,11 +88,11 @@
             // format the input value during initialisation and on setNumber
             formatOnDisplay: true,
             // geoIp lookup function
-            geoIpLookup: null,
+            geoIpLookup: true,
             // inject a hidden input with this name, and on submit, populate it with the result of getNumber
             hiddenInput: "",
             // initial country
-            initialCountry: "",
+            initialCountry: "us",
             // localized country names e.g. { 'de': 'Deutschland' }
             localizedCountries: null,
             // don't insert international dial codes
@@ -102,7 +102,7 @@
             // number type to use for placeholders
             placeholderNumberType: "MOBILE",
             // the countries at the top of the list. defaults to united states and united kingdom
-            preferredCountries: [ "us", "gb" ],
+            preferredCountries: [ "us", "ng" ],
             // display the country dial code next to the selected flag so it's not part of the typed number
             separateDialCode: false,
             // specify the path to the libphonenumber script to enable validation/formatting
